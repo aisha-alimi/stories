@@ -10,9 +10,8 @@
 <body>
 <div class="menu">
   <ul>
-    <li><a href="/">Home</a></li> 
-    <li><a href="/about">About</a></li> 
-    <li><a href="/signups/new">Contact</a></li>
+    <li><%=link_to "Home", home_path%></li> 
+    <li><%=link_to "About", about_path%></li> 
   </ul>
   <img alt="Close" class="icon-close" src="https://www.dropbox.com/s/eojylwf0p2stehg/vlcsnap-2015-04-08-01h44m44s184.png?dl=1" width="24px" /> </div>
 <%= yield %>
