@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stories</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+ 
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="menu">
+  <ul>
+    <li><a href="/">Home</a></li> 
+    <li><a href="/about">About</a></li> 
+    <li><a href="/signups/new">Contact</a></li>
+  </ul>
+  <img alt="Close" class="icon-close" src="https://www.dropbox.com/s/eojylwf0p2stehg/vlcsnap-2015-04-08-01h44m44s184.png?dl=1" width="24px" /> </div>
+<%= yield %>
+  <div class="footer">
+    <div class="container">
+      <p>A Shutterbugg Project</p> 
+    </div> 
+  </div>
+ <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+</body>
+</html>
